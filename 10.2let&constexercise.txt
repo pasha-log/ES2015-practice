@@ -1,0 +1,18 @@
+const PI = 3.14
+PI = 42; //error!
+
+What is the difference between var and let?
+Var can override the built in objects or methods in the window console, which you don't have to worry as much about let and const 
+(with a conflicting name). Let can be reassigned but not redeclared like var, unless redeclared in different scopes (let is a block-scoped variable).
+Var is scoped to functions, not code blocks.
+What is the difference between var and const?
+Const cannot be reassigned a different primitive value after it has been declared. But it can be mutated into a different reference type, like 
+an array. Elements can be pushed into a constant array variable. The same can be said of constant object variables. But to be clear, the properties 
+can be changed.
+What is the difference between let and const?
+Both are the same, except that let can be reassigned but const cannot. Both are blockscoped, and can be mutated. Also, let can be declared 
+with initializing any value to it, but a const variable cannot behave this way.
+What is hoisting?
+It’s the way that we explain how the JS compiler works. Variables are lifting or “hoisted” to the top of the scope they are declared in. When using var, you can access the variable name and it’s undefined value before it is used later on.
+
+Function declarations are also hoisted and can be invoked “before” they are defined in a codebase.
